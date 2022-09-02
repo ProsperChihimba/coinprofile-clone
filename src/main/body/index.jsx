@@ -13,7 +13,7 @@ const Body = () => {
                 bg='white'
                 rounded='md'
                 border='1px'
-                height={200}
+                height='80vh'
             >
                 Hello
             </Box>
