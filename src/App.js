@@ -1,13 +1,13 @@
 import { ChakraProvider } from '@chakra-ui/react'
-import { Box } from '@chakra-ui/react'
+import { Box, Container  } from '@chakra-ui/react'
 import Main from './main';
 
 function App() {
   return (
     <ChakraProvider>
-      <Box>
+      <Container maxW={1140}>
         <Main />
-      </Box>
+      </Container>
     </ChakraProvider>
   );
 }

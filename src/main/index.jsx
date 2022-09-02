@@ -1,8 +1,14 @@
 import React from 'react'
+import {
+    Box
+} from '@chakra-ui/react'
+import Header from '../header'
 
 const Main = () => {
     return (
-        <div>Main</div>
+        <Box>
+            <Header />
+        </Box>
     )
 }
 
