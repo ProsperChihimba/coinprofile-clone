@@ -4,9 +4,19 @@ import { Sidebar } from '../../sidebar'
 
 const Body = () => {
     return (
-        <Box>
+        <Box
+            display='grid'
+            gridTemplateColumns='10rem auto'
+        >
             <Sidebar />
-            <Box>Hello</Box>
+            <Box
+                bg='white'
+                rounded='md'
+                border='1px'
+                height={200}
+            >
+                Hello
+            </Box>
         </Box>
     )
 }
