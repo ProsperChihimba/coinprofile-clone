@@ -1,9 +1,14 @@
 import React from 'react'
+import { Box } from '@chakra-ui/react'
+import { Sidebar } from '../../sidebar'
 
-const index = () => {
+const Body = () => {
     return (
-        <div>index</div>
+        <Box>
+            <Sidebar />
+            <Box>Hello</Box>
+        </Box>
     )
 }
 
-export default index
+export default Body
