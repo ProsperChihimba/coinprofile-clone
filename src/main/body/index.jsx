@@ -6,6 +6,7 @@ import {
     Button,
     Center
 } from '@chakra-ui/react'
+import { Scrollbars } from 'react-custom-scrollbars';
 import { Sidebar } from '../../sidebar'
 import { AiOutlineCaretDown } from "react-icons/ai";
 import { FaRegPaperPlane } from "react-icons/fa";
@@ -24,6 +25,10 @@ const Body = () => {
                 border='1px'
                 height='80vh'
             >
+                <Scrollbars
+                    renderTrackHorizontal={props => <div {...props} style={{ display: 'none' }} className="track-horizontal" />}
+                    renderTrackVertical={props => <div {...props} style={{ display: 'none' }} className="track-vertical" />}
+                >
                 <Box p={45}>
                     <Box pb='61px'>
                         <Text as='b'>Welcome! 👋🏽</Text>
@@ -95,6 +100,7 @@ const Body = () => {
                         </Flex>
                     </Box>
                 </Box>
+                </Scrollbars>
             </Box>
         </Box>
     )
