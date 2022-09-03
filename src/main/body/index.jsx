@@ -31,12 +31,12 @@ const Body = () => {
                     <Box pb={25}>
                         <Text as='b'>USD 1000.00</Text>
                     </Box>
-                    <Box>
+                    <Box mb='61px'>
                         <Flex gap={12}>
-                            <Box>
+                            <Box mt={2}>
                                 <Flex>
                                     <Center>
-                                        <Text mr={2}>Estimated Total balance in</Text>
+                                        <Text mr={2} opacity='0.5' fontSize={16} fontWeight='400'>Estimated Total balance in</Text>
                                         <Button
                                             rightIcon={<AiOutlineCaretDown />}
                                             rounded='3xl'
@@ -55,6 +55,23 @@ const Body = () => {
                                     Add Money
                                 </Button>
                             </Flex>
+                        </Flex>
+                    </Box>
+                    <Box>
+                        <Text opacity='0.5' mb={3} fontSize={16} fontWeight='400'>C’mon, do something</Text>
+                        <Flex>
+                            <Box bg='rgba(0, 0, 0, 0.05)'  maxW='279px' rounded='md' p={21}>
+                                <Text fontSize={18} fontWeight='500' color='rgb(0, 0, 0)' >Refer & earn $4 💸</Text>
+                                <Text opacity='0.5' fontSize={14} pt={2} pb={2}>
+                                    You’ll both get $2 when your friend does a transaction of $20 and above.
+                                </Text>
+                                <Text
+                                    textDecoration='underline'
+                                    fontWeight='500'
+                                    fontSize={16}
+                                    cursor='pointer'
+                                >Get referral link</Text>
+                            </Box>
                         </Flex>
                     </Box>
                 </Box>
