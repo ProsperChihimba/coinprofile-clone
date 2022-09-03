@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate} from 'react-router-dom'
 import {
     Box,
     Text,
@@ -13,6 +14,12 @@ import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { AiOutlineGoogle } from "react-icons/ai";
 
 const Login = () => {
+
+    const navigate = useNavigate();
+    const navigateHome = () => {
+        navigate('/home');
+    };
+
     return (
         <Box centerContent>
             <Box pt={10}>
@@ -27,7 +34,7 @@ const Login = () => {
                         <FormControl>
                             <Input type='email' placeholder='Enter your email' border='1px' borderColor='rgba(0, 0, 0, 0.5)' mb={4} />
                             <Input type='email' placeholder='Enter password' border='1px' borderColor='rgba(0, 0, 0, 0.5)' mb={8} />
-                            <Button bg='black' color='white' variant='solid' w='100%' mb={6}>
+                            <Button bg='black' color='white' variant='solid' w='100%' mb={6} onClick={navigateHome}>
                                 Sign in
                             </Button>
                             <Text
@@ -41,7 +48,15 @@ const Login = () => {
                             >
                                 Forgot passoword?
                             </Text>
-                            <Button bg='white' border='1px' color='black' variant='solid' w='100%' mb={5} leftIcon={<AiOutlineGoogle />}>
+                            <Button
+                                bg='white'
+                                border='1px'
+                                color='black'
+                                variant='solid'
+                                w='100%'
+                                mb={5}
+                                leftIcon={<AiOutlineGoogle />}
+                            >
                                 Sign in with Google
                             </Button>
                         </FormControl>
