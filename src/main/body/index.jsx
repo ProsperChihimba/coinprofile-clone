@@ -59,11 +59,11 @@ const Body = () => {
                     </Box>
                     <Box>
                         <Text opacity='0.5' mb={3} fontSize={16} fontWeight='400'>C’mon, do something</Text>
-                        <Flex>
-                            <Box bg='rgba(0, 0, 0, 0.05)'  maxW='279px' rounded='md' p={21}>
+                        <Flex gap={5}>
+                            <Box bg='rgba(0, 0, 0, 0.05)'  minW='279px' rounded='md' p={21}>
                                 <Text fontSize={18} fontWeight='500' color='rgb(0, 0, 0)' >Refer & earn $4 💸</Text>
                                 <Text opacity='0.5' fontSize={14} pt={2} pb={2}>
-                                    You’ll both get $2 when your friend does a transaction of $20 and above.
+                                    You’ll both get $2 when your friend <br /> does a transaction of $20 and above.
                                 </Text>
                                 <Text
                                     textDecoration='underline'
@@ -71,6 +71,15 @@ const Body = () => {
                                     fontSize={16}
                                     cursor='pointer'
                                 >Get referral link</Text>
+                            </Box>
+                            <Box bg='rgba(0, 0, 0, 0.05)'  minW='279px' rounded='md' p={21}>
+                                <Text fontSize={18} fontWeight='500' color='rgb(0, 0, 0)' >Earn up to 5% interest 💰</Text>
+                                <Text opacity='0.5' fontSize={14} pt={4} pb={4}>
+                                    Earn interest on your USD balance, <br /> paid weekly.
+                                </Text>
+                                <Button rounded='3xl' h={25} w='fit-content' bg='black' color='white' variant='solid'>
+                                    Comming soon
+                                </Button>
                             </Box>
                         </Flex>
                     </Box>
