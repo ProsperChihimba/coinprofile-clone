@@ -81,6 +81,17 @@ const Body = () => {
                                     Comming soon
                                 </Button>
                             </Box>
+                            <Box bg='transparent'  minW='279px' rounded='md' p={21}>
+                                <Text opacity='0.7' fontWeight='500' fontSize={14}  pb={6}>
+                                    We’re constantly improving our <br /> product, so we always appreciate any <br /> feedback you might have
+                                </Text>
+                                <Text
+                                    textDecoration='underline'
+                                    fontWeight='500'
+                                    fontSize={16}
+                                    cursor='pointer'
+                                >Suggest a feature</Text>
+                            </Box>
                         </Flex>
                     </Box>
                 </Box>
