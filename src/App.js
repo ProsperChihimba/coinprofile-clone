@@ -5,8 +5,8 @@ import {
 } from "react-router-dom";
 import { ChakraProvider } from '@chakra-ui/react'
 import { Container  } from '@chakra-ui/react'
-import Main from './components/main'
-import Login from './components/login';
+import Main from './components/dashboard/main'
+import Login from './components/dashboard/login';
 
 const AppWrapper = () => {
   let routes = useRoutes([
