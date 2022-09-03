@@ -6,8 +6,10 @@ import {
     Button,
     Center,
     Avatar,
-    Spacer
+    Spacer,
+    Link
 } from '@chakra-ui/react'
+import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Scrollbars } from 'react-custom-scrollbars';
 import { Sidebar } from '../../sidebar'
 import { AiOutlineCaretDown } from "react-icons/ai";
@@ -18,6 +20,7 @@ import { FiArrowDownLeft } from "react-icons/fi";
 
 const Body = () => {
     return (
+        <>
         <Box
             display='grid'
             gridTemplateColumns='10rem auto'
@@ -133,6 +136,12 @@ const Body = () => {
                 </Scrollbars>
             </Box>
         </Box>
+        <Center>
+            <Link color='black' mt={3} href='https://github.com/ProsperChihimba/' isExternal>
+                Made with ❤️ by Prosper Chihimba <ExternalLinkIcon mx='2px' />
+            </Link>
+        </Center>
+        </>
     )
 }
 
