@@ -7,10 +7,12 @@ import { ChakraProvider } from '@chakra-ui/react'
 import { Container  } from '@chakra-ui/react'
 import Main from './components/dashboard/main'
 import Login from './components/dashboard/login';
+import { MainWeb } from './components/web';
 
 const AppWrapper = () => {
   let routes = useRoutes([
-    { path: "/", element: <Login /> },
+  { path: "/", element: <MainWeb /> },
+    { path: "/signin", element: <Login /> },
     {
       path: "home", element: 
         <Container maxW={1140}>
