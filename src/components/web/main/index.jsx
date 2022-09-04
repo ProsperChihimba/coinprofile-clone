@@ -14,6 +14,7 @@ import {
     FormHelperText,
 } from '@chakra-ui/react'
 import check from '../../../assets/CheckCircle_btyue9.svg'
+import './index.css'
 
 export const MainBody = () => {
     return (
@@ -50,8 +51,8 @@ export const MainBody = () => {
                 </Box>
                 <Spacer />
                 <Box pt='13%' w='100%'>
-                    <Box w='329px' bg='white' p={30} rounded='md' border='1px'>
-                        <FormControl>
+                    <Box w='329px' bg='white' p={30} rounded='md' border='1px' >
+                        <FormControl >
                             <FormLabel>1 BTC = 19,582.97 USD</FormLabel>
                             <Input type='send' />
                         </FormControl>

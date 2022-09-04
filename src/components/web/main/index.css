@@ -1,0 +1,10 @@
+.send-form::after {
+    transition: all 200ms linear 0s;
+    content: "";
+    background: rgb(255, 255, 255);
+    inset: 5px -5px -5px 5px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    position: absolute;
+    z-index: -1;
+}
