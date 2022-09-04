@@ -17,6 +17,7 @@ import check from '../../../assets/CheckCircle_btyue9.svg'
 import './index.css'
 
 export const MainBody = () => {
+
     return (
         <Container maxW={1140} pt={3} pb={3} h='100vh'>
             <Flex>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate} from 'react-router-dom'
 import {
     Box,
     Container,
@@ -9,6 +10,12 @@ import {
 } from '@chakra-ui/react'
 
 export const WebHeader = () => {
+
+    const navigate = useNavigate();
+    const navigateLogin = () => {
+        navigate('/signin');
+    };
+
     return (
         <Box
             bg='white'
@@ -22,10 +29,10 @@ export const WebHeader = () => {
                     </Flex>
                     <Spacer />
                     <Flex gap={4}>
-                        <Button bg='white' color='black' variant='solid' border='1px' pt='10px' pr='27px' pb='10px' pl='27px'>
+                        <Button bg='white' onClick={navigateLogin} color='black' variant='solid' border='1px' pt='10px' pr='27px' pb='10px' pl='27px'>
                             Login
                         </Button>
-                        <Button bg='black' color='white' variant='solid' pt='10px' pr='27px' pb='10px' pl='27px'>
+                        <Button bg='black' onClick={navigateLogin} color='white' variant='solid' pt='10px' pr='27px' pb='10px' pl='27px'>
                             Sign up
                         </Button>
                     </Flex>
