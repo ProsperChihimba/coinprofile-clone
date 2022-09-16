@@ -20,7 +20,7 @@ export const MainBody = () => {
 
     return (
         <>
-            <Container maxW={1140} pt={3} pb={3} h='100vh'>
+            <Container maxW={1140} pt={3} pb={3}>
                 <Flex>
                     <Box pt='13%' width='100%'>
                         <Text pb='30px' fontSize='2.47222rem' fontWeight='900' color='rgb(31, 32, 35)' lineHeight='3.88rem'>Send, spend, and earn <br /> with crypto</Text>
