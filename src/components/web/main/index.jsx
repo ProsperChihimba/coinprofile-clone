@@ -81,10 +81,14 @@ export const MainBody = () => {
                             <Text>Backed by</Text>
                         </Box>
                         <Box>
-                            Celo
+                            <Image src='https://res.cloudinary.com/payourse-technologies-inc/image/upload/v1663197100/coinprofile%202.0/celo_wev22g_rrdfif.webp' width='auto' height='34px' />
                         </Box>
-                        <Box>yc</Box>
-                        <Box>flori</Box>
+                        <Box>
+                            <Image src='https://res.cloudinary.com/payourse-technologies-inc/image/upload/v1663197188/coinprofile%202.0/yc_dvgm0k-_1__ck2but.webp' width='auto' height='34px' />
+                        </Box>
+                        <Box>
+                            <Image src='https://res.cloudinary.com/payourse-technologies-inc/image/upload/v1663197291/coinprofile%202.0/flori_uizrdo_b09nw2.webp' width='auto' height='34px' />
+                        </Box>
                     </Flex>
                 </Center>
             </Container>
