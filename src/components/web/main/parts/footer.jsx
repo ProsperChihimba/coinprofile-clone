@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, Text, Flex, Center, Image } from '@chakra-ui/react';
+import { Box, Text, Flex, Center, Image, Link } from '@chakra-ui/react';
+import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 const Footer = () => {
 
@@ -115,6 +116,11 @@ const Footer = () => {
                         </Center>
                     </Flex>
                 </Box>
+            </Center>
+            <Center>
+                <Link color='white' mt={10} mb={10} href='https://github.com/ProsperChihimba/' isExternal>
+                    Made with ❤️ by Prosper Chihimba <ExternalLinkIcon mx='2px' />
+                </Link>
             </Center>
         </Box>
     )
