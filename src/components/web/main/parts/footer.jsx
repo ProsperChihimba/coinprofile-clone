@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Text, Flex, Center, Image, Spacer } from '@chakra-ui/react';
+import { Box, Text, Flex, Center, Image } from '@chakra-ui/react';
 
 const Footer = () => {
 
@@ -14,7 +14,7 @@ const Footer = () => {
         <Box pl='15px' bg='black' >
             <Center>
                 <Box w='100%' maxW='1140px' pt='5.2rem'>
-                    <Flex gap='10px' mb='20px'>
+                    <Flex gap='10px' mb='100px'>
                         <Box>
                             <Text
                                 textAlign='left'
@@ -82,7 +82,37 @@ const Footer = () => {
                         </Box>
                     </Flex>
                     <Flex>
-                        
+                        <Center>
+                            <Box
+                                w='550px'
+                            >
+                                <Image src='https://res.cloudinary.com/payourse-technologies-inc/image/upload/v1653093948/coinprofile%202.0/logoWhite.svg' h='35px' />
+                            </Box>
+                            <Box
+                                ml='5rem'
+                            >
+                                <Text
+                                    textAlign='left'
+                                    opacity='0.6'
+                                    fontSize='1.14rem'
+                                    fontWeight='900'
+                                    color='rgb(255, 255, 255)'
+                                    w='268px'
+                                >
+                                    1209 Orange Street, Wilmington, Delaware, United States.
+                                </Text>
+                                <Text
+                                    textAlign='left'
+                                    lineHeight='4.8rem'
+                                    opacity='0.6'
+                                    fontSize='1.14rem'
+                                    fontWeight='900'
+                                    color='rgb(255, 255, 255)'
+                                >
+                                    +1(206) 922-8971
+                                </Text>
+                            </Box>
+                        </Center>
                     </Flex>
                 </Box>
             </Center>
