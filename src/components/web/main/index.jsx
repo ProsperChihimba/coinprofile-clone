@@ -1,6 +1,7 @@
 import React from 'react'
 import Features from './parts/features'
 import Feedback from './parts/feedback'
+import Footer from './parts/footer'
 import Profits from './parts/profits'
 import Security from './parts/security'
 import Welcome from './parts/welcome'
@@ -14,6 +15,7 @@ export const MainBody = () => {
             <Features />
             <Feedback />
             <Security />
+            <Footer />
         </>
     )
 }

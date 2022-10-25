@@ -3,7 +3,7 @@ import { Box, Text, Flex, Center, Image } from '@chakra-ui/react'
 
 const Security = () => {
     return (
-        <Box bg='rgb(242, 237, 220)' borderTop='2px' borderBottom='2px'>
+        <Box bg='rgb(242, 237, 220)' borderBottom='2px'>
             <Box pt='11.52rem' pb='10.8rem' pr='150px' pl='150px' w='100%'>
                 <Box mb='35px' w='100%'>
                     <Center>
