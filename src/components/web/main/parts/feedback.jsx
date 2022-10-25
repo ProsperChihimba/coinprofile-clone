@@ -12,7 +12,8 @@ const Feedback = () => {
                         </Text>
                     </Center>
                 </Box>
-                <Flex maxW='880px' justifyContent='space-between'>
+                <Center>
+                <Flex w='880px' justifyContent='space-between'>
                     <Box>
                         <Box mb='20px' border='1px' bg='white' borderRadius='5px' w='430px' maxW='100%' p='2.01rem 2.08rem' >
                             <Text textAlign='left' fontSize='1.1rem' fontWeight='500' mb='20px' color='rgb(31, 32, 35)'>The new Coinprofile send flow feels like magic!!</Text>
@@ -84,6 +85,7 @@ const Feedback = () => {
                         </Box>
                     </Box>
                 </Flex>
+                </Center>
             </Box>
         </Box>
     )
