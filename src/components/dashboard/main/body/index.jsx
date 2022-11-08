@@ -40,9 +40,31 @@ const Body = () => {
                         <Box pb='61px'>
                             <Text as='b'>Welcome! 👋🏽</Text>
                         </Box>
-                        <Box pb={25}>
-                            <Text as='b'>USD 1000.00</Text>
-                        </Box>
+                        <Flex mb='25px'>
+                            <Center>
+                                <Text
+                                    fontSize='20px'
+                                    fontWeight='500'
+                                    opacity='0.6'
+                                >
+                                    NGN&nbsp;
+                                </Text>
+                                <Text
+                                    fontSize='40px'
+                                    fontWeight='500'
+                                    mb='10px'
+                                >
+                                    0
+                                </Text>
+                                <Text
+                                    fontSize='20px'
+                                    fontWeight='500'
+                                    opacity='0.6'
+                                >
+                                    .00
+                                </Text>
+                            </Center>
+                        </Flex>
                         <Box mb='61px'>
                             <Flex gap={12}>
                                 <Box mt={2}>
