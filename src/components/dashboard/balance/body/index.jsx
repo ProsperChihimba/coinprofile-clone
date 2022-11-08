@@ -92,22 +92,36 @@ const Body = () => {
 
                             {/* Buttons row */}
                             <Box mb='61px'>
-                            <Flex gap={4}>
-                                <Button leftIcon={<IoIosAdd size={30} color='white' />} bg='black' color='white' variant='solid' border='1px'>
-                                    Add Money
-                                </Button>
-                                <Button disabled leftIcon={<FaRegPaperPlane />} bg='white' color='black' variant='solid' border='1px'>
-                                    Send Money
-                                </Button>
-                                
-                                <Button disabled leftIcon={<BsArrow90DegRight />} bg='white' color='black' variant='solid' border='1px'>
-                                    Withdraw
-                                </Button>
-                                <Button leftIcon={<BsArrowClockwise size={22} />} bg='white' color='black' variant='solid' border='1px'>
-                                    Convert
-                                </Button>
-                            </Flex>
-                        </Box>
+                                <Flex gap={4}>
+                                    <Button leftIcon={<IoIosAdd size={30} color='white' />} bg='black' color='white' variant='solid' border='1px'>
+                                        Add Money
+                                    </Button>
+                                    <Button disabled leftIcon={<FaRegPaperPlane />} bg='white' color='black' variant='solid' border='1px'>
+                                        Send Money
+                                    </Button>
+                                    
+                                    <Button disabled leftIcon={<BsArrow90DegRight />} bg='white' color='black' variant='solid' border='1px'>
+                                        Withdraw
+                                    </Button>
+                                    <Button leftIcon={<BsArrowClockwise size={22} />} bg='white' color='black' variant='solid' border='1px'>
+                                        Convert
+                                    </Button>
+                                </Flex>
+                            </Box>
+
+                            {/* Transactions row */}
+                            <Text opacity='0.5' mb={3} fontSize={16} fontWeight='400'>Transactions</Text>
+
+                            <Box justifyContent='center'>
+                                <Text fontWeight='500' textAlign='center' mb='10px'>It’s lonely here 😢</Text>
+                                <Center mb='10px'>
+                                    <Text  opacity='0.7' fontSize='13px' padding='7px' w='338px'>Your recent transaction activities show up here, but you haven’t done any transactions yet.</Text>
+                                </Center>
+                                <Flex justifyContent='center'>
+                                    <Text fontWeight='400' textAlign='center'>Need help?&nbsp;</Text>
+                                    <Text fontWeight='500' textAlign='center' >Talk to us</Text>
+                                </Flex>
+                            </Box>
                         </Box>
                     </Scrollbars>
                 </Box>
