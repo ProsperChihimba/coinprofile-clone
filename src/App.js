@@ -9,6 +9,7 @@ import Main from './components/dashboard/main'
 import Login from './components/dashboard/login';
 import { MainWeb } from './components/web';
 import Balance from './components/dashboard/balance';
+import Cards from './components/dashboard/cards';
 
 const AppWrapper = () => {
   let routes = useRoutes([
@@ -24,6 +25,12 @@ const AppWrapper = () => {
       path: "balance", element: 
         <Container maxW={1140}>
           <Balance />
+        </Container>
+    },
+    {
+      path: "cards", element: 
+        <Container maxW={1140}>
+          <Cards />
         </Container>
     },
     // ...

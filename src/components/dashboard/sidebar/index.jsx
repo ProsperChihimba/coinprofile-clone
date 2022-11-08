@@ -23,6 +23,8 @@ export const Sidebar = () => {
         index = 0;
     } else if (pathname === '/balance') {
         index = 1;
+    } else if (pathname === '/cards') {
+        index = 2;
     }
 
     // navigate
@@ -32,6 +34,10 @@ export const Sidebar = () => {
 
     const balance = () => {
         navigateTo('balance')
+    } 
+
+    const cards = () => {
+        navigateTo('cards')
     } 
 
     return (
@@ -50,7 +56,7 @@ export const Sidebar = () => {
                             <Text as='b' pl={4}>Balances</Text>
                         </Flex>
                     </Box>
-                    <Box cursor='pointer'>
+                    <Box cursor='pointer' onClick={cards}>
                         <Flex>
                             <Image src='https://res.cloudinary.com/payourse-technologies-inc/image/upload/v1654551364/coinprofile%202.0/CreditCard.svg' />
                             <Text as='b' pl={4}>Cards</Text>
